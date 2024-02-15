@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+  }
+  
+  a,
+  p,
+  h2,
+  h3,
+  h1 {
+    color: white;
+  }
+
+/* Mario */
+.marioTitle{
+    width: 40%;
+}
+
+.startButton{
+    padding: 20px 50px;
+    color: white;
+    background-color: rgb(246, 30, 30);
+    font-size: 24px;
+}
+
+.startMario{
+    /* margin-top: 50px; */
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.marioSection{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+}
+.screen {
+    display: grid;
+    grid-template-columns: repeat(30, 16fr);
+  }
+  
+  .canvas {
+    margin-bottom: 80px;
+  }
+  
+  .marioBtn {
+    margin: 10px;
+    padding: 15px 20px;
+    background-color: brown;
+    color: white;
+  }
+  /* /Mario */

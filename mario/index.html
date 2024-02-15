@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="render.js" defer></script>
+    <script src="colisionsAndScroll.js" defer></script>
+    <script src="controls.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>Mario</title>
+  </head>
+  <body>
+    <section id="mario" class="marioSection">
+      <div id="startMario" class="startMario">
+        <img class="marioTitle" src="fotos/MarioTitle.png" alt="MarioTitle" />
+        <button class="startButton" onclick="initMario()">Start</button>
+      </div>
+      <h2>Select height of the pyramid</h2>
+      <button class="marioBtn" onclick="makePyramid(0)">0</button>
+      <button class="marioBtn" onclick="makePyramid(1)">1</button>
+      <button class="marioBtn" onclick="makePyramid(2)">2</button>
+      <button class="marioBtn" onclick="makePyramid(3)">3</button>
+      <button class="marioBtn" onclick="makePyramid(4)">4</button>
+      <button class="marioBtn" onclick="makePyramid(5)">5</button>
+      <button class="marioBtn" onclick="makePyramid(6)">6</button>
+      <canvas id="myCanvas" class="canvas"></canvas>
+    </section>
+    <!-- /Mario section -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: import.meta.env.VITE_apiKey,
+        authDomain: import.meta.env.VITE_authDomain,
+        projectId: import.meta.env.VITE_projectId,
+        storageBucket: import.meta.env.VITE_storageBucket,
+        messagingSenderId: import.meta.env.VITE_messagingSenderId,
+        appId: import.meta.env.VITE_appId,
+        measurementId: import.meta.env.VITE_measurementId,
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
