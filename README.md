@@ -25,7 +25,7 @@ With this project, my aim is to demonstrate my passion for programming. Through 
 ## Showcase
 
 `/`
-![Home Page](screenshots/1.png)
+![Home Page](screenshots/1.PNG)
 
 
 ## Getting Started
