@@ -13,6 +13,7 @@ body {
 /* Mario */
 .marioTitle{
     width: 40%;
+    max-width: 800px;
 }
 
 .startButton{
